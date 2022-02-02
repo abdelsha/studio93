@@ -13,21 +13,12 @@ function App(props) {
     
     <Navigation>
       <Routes>
-        <Route path="/" exact={true}>
-          <Home/>
-        </Route>
-        <Route path="/richmond-road">
-          <Gallery/>
-        </Route>
-        <Route path="">
-          <Press/>
-        </Route>
-        <Route path="/about">
-          <Aboutus/>
-        </Route>
-        <Route path="/contact-us">
-          <Connect/>
-        </Route>
+        <Route path="/" exact={true} element={<Home/>}/>
+        <Route path="/richmond-road" element = {<Gallery/>}/>
+        <Route path="" element={<Press/>}/>
+        <Route path="/about" element={<Aboutus/>}/>
+        <Route path="/contact-us" element={<Connect/>}/>
+
       </Routes>
     </Navigation>
   );

@@ -1,4 +1,90 @@
-:root{
-    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+*{
+    font-family: "Cairo","Poppins", sans-serif;
+    background: linear-gradient(135deg,#0F152D 100%,rgb(40,116,252) 50%);
+    color: #fcb900;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: -0.45px;
+}
+
+.Navigation_Main{
+height: 100vh;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+
+.Navigation_NavigationBar{
+height: 10%;
+display: flex;
+width: 90%;
+margin-right: auto;
+margin-left: auto;
+margin-top: 5px;
+position: relative;
+}
+.Navigation_body{
+height:90%;
+display: flex;
+
+}
+.Navigation_logo{
+    display: flex;
+    width: 35.95%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.Navigation_logo .ImgLeft{
+    max-width: 118px;
+    height: 64px;
+}
+.Navigation_Routing{
+    display: flex;
+    width: 44.987%;
+    justify-content: flex-end;
+}
+.Navigation_Routing_block{
+    display: flex;
+    
+
+}
+.Navigation_links{
+    color: #C49A6C;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    padding: 4px 0px;
+    
+}
+.Navigation_Social{
+    display: flex;
+    width: 13.027%;
+    justify-content: center;
+}
+.Navigation_Social_block{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.Navigation_Social .Logos{
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    display: block;
+    margin: 0px 1px;
+}
+.Navigation_logo_right{
+    display: flex;
+    width: 6%;
+}
+.Navigation_logo_right .ImgRight{
+    width: 59px;
+    max-width: 59px;
+    height: 64px;
 }
