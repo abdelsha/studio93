@@ -28,23 +28,23 @@ const images =()=>{
         <> 
         <div className='Gallary_images'>
           <div className='Gallary_images_left'>
-            {/* <img src={image} alt=""></img> */}
+            <img src={image} alt=""></img>
           </div>
           <div className='Gallary_images_right'>
             <div className='Gallary_images_righttop'>
-              {/* <img src={image} alt=""></img> */}
+              <img src={image} alt=""></img>
             </div>
             <div className='Gallary_images_rightbottom'>
-              {/* <img src={image} alt=""></img> */}
+              <img src={image} alt=""></img>
             </div>
           </div>
           
         </div>
         
         <div className='Gallary_images'>
-          {/* <img src={image} alt=""></img> */}
+          <img src={image} alt=""></img>
         </div>
-        {/* <img src={image} alt=""></img> */}
+        <img src={image} alt=""></img>
         </>
         
         
