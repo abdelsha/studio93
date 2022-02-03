@@ -7,48 +7,72 @@ function Gallery() {
 
   const ref = useRef(null);
 const[imagedata,setImageData]=useState([])
-
+const[imagearray,setImageArray]=useState([])
 
 const images =()=>{
-   for(let i=0; i<19;i++){
-      setImageData((prev)=>[...prev,"/images/"+`Richmond${i}`+".jpg"])
+   for(let i=0; i<19;i+=4){
+    let temp=[];
+    for(let j=i;j<i+4;j++){
+      temp.push("/images/"+`Richmond${j}`+".jpg")
+    }
+      setImageData((prev)=>[...prev,temp])
       //console.log(imagedata)
    }
+  
  }
 
  useEffect(()=>{
    images();
-   //console.log(imagedata)
+   console.log(imagedata);
  },[])
+
+ 
   
   return (
     <div className='Gallary_main'>
+      
+      
+      
+      
       {/* {console.log(imagedata)} */}
-      {imagedata.map((image,index)=>(
+      {imagedata.map((imagegroup,index)=>{
+        let key=index
+        return (
+          <>
+          <img className='Gallery_images' src={imagegroup[0]} alt=""></img>
+          <img className='Gallery_images' src={imagegroup[1]} alt=""></img>
+          <img className='Gallery_images' src={imagegroup[2]} alt=""></img>
+          <img className='Gallery_images' src={imagegroup[3]} alt=""></img>
+          </>
+        )
+      })}
+      {/* {imagedata.map((image,index)=>(
+        
         <> 
-        <div className='Gallary_images'>
+        
           <div className='Gallary_images_left'>
-            <img src={image} alt=""></img>
+            <img className='Gallery_images' src={image} alt=""></img>
           </div>
           <div className='Gallary_images_right'>
             <div className='Gallary_images_righttop'>
-              <img src={image} alt=""></img>
+              <img className='Gallery_images' src={image} alt=""></img>
             </div>
             <div className='Gallary_images_rightbottom'>
-              <img src={image} alt=""></img>
+              <img className='Gallery_images' src={image} alt=""></img>
             </div>
           </div>
           
-        </div>
+        
         
         <div className='Gallary_images'>
-          <img src={image} alt=""></img>
+          <img className='Gallery_images' src={image} alt=""></img>
         </div>
-        <img src={image} alt=""></img>
+        
         </>
         
         
-      ))}
+      ))} */}
+      
       
     </div>
   );
