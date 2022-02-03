@@ -1,0 +1,42 @@
+.Gallary_main{
+    display: flex;
+    
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 10px 0;
+}
+.Gallary_images{
+   display: flex;
+   min-width: 100%;
+   min-height: 100%;
+}
+
+.Gallary_images_left{
+    display: flex;
+    height: 100%;
+    min-width: 50%;
+    margin-right: 10px;
+}
+.Gallary_images_right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 50%;
+    margin-right: 10px;
+}
+
+.Gallary_images_righttop{
+    display: flex;
+    margin-left: 10px;
+    height: 50%;
+    min-width: 50%;
+    margin-bottom: 10px;
+    
+}
+.Gallary_images_rightbottom{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 50%;
+    min-width: 50%;
+}
