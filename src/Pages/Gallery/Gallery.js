@@ -110,7 +110,7 @@ function Gallery() {
             </div>
             <div></div>
             {imagegroup[4] ? (
-              <div className="Gallery_Containe">
+              <div className="Gallery_Containers">
                 <div className="Gallery_image5">
                   <img src={imagegroup[4]} alt=""></img>
                 </div>
