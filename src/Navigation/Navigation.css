@@ -1,5 +1,11 @@
-*{
-    font-family: "Cairo","Poppins", sans-serif;
+
+
+.Navigation_Main{
+height: 100vh;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+font-family: "Cairo","Poppins", sans-serif;
     background: linear-gradient(135deg,#0F152D 100%,rgb(40,116,252) 50%);
     color: #fcb900;
     font-weight: 300;
@@ -8,13 +14,7 @@
     font-size: 14px;
     line-height: 10px;
     letter-spacing: -0.45px;
-}
 
-.Navigation_Main{
-height: 100vh;
-overflow: hidden;
-display: flex;
-flex-direction: column;
 }
 
 .Navigation_NavigationBar{

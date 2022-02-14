@@ -190,6 +190,7 @@
   .Gallery_images4{
     grid-area: FourthImage;
     display: flex;
+    flex-wrap: wrap;
     min-width:max-content;
     max-height: 100%;
     
@@ -201,6 +202,28 @@
   object-fit: cover;
     
     
+  }
+  .Gallery_image4_text{
+    grid-area: FourthImage;
+    display: flex;
+    min-height: calc(100% - 60px);
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: top;
+    padding: 40px 40px 0px 40px;
+    background-color: #D8C9BE;
+    min-width:max-content;
+  }
+  .Gallery_tile3{
+    
+    max-height: 100%;;
+    font-family: "Lustria", Sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #0C142D;
+    
+    line-height: 1.4074;
+    text-align: left;
   }
   .Gallery_Containers{
     display: flex;

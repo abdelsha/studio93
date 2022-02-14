@@ -12,9 +12,9 @@ function Gallery() {
 
   const images = () => {
     let size = 19;
-    for (let i = 0; i < size; i += 5) {
+    for (let i = 0; i < size; i += 4) {
       let temp = [];
-      for (let j = i; j < i + 5; j++) {
+      for (let j = i; j < i + 4; j++) {
         if (j < size) temp.push("/images/" + `Richmond${j}` + ".jpg");
       }
       setImageData((prev) => [...prev, temp]);
@@ -70,7 +70,7 @@ function Gallery() {
   return (
     <div className="Gallary_main container" ref={scrollRef}  id="container">
       {/* {console.log(imagedata)} */}
-      {console.log(window.pageXOffset)}
+      {/* {console.log(window.pageXOffset)} */}
       <div className="Gallery_ArrowLeft" onClick={(e)=>{onWheel2(e,null)}}>
         <img src="/images/Left-Button.png" alt=""></img>
       </div>
@@ -79,6 +79,7 @@ function Gallery() {
       </div>
       {imagedata.map((imagegroup, index) => {
         let key = index;
+        {console.log(imagegroup, index, index%3)}
         return (
           <>
             <div className="Gallery_Container">
@@ -90,29 +91,63 @@ function Gallery() {
                 ) : null}
 
                 {imagegroup[1] ? (
-                  <div className="Gallery_images2">
-                    <img src={imagegroup[1]} alt=""></img>
-                  </div>
+                  <>
+                 
+                    {index%3===1?(
+                      <img src={imagegroup[4]} alt=""></img>
+                    ):(
+                      <div className="Gallery_images2">
+                      <img src={imagegroup[1]} alt=""></img>
+                      </div>
+                    )}
+                    
+                  
+                  </>
                 ) : null}
 
                 {imagegroup[2] ? (
-                  <div className="Gallery_images3">
-                    <img src={imagegroup[2]} alt=""></img>
-                  </div>
+                  <>
+                  
+                    {index%3===2?(
+                      <img src={imagegroup[4]} alt=""></img>
+                    ):(
+                      <div className="Gallery_images3">
+                      <img src={imagegroup[2]} alt=""></img>
+                      </div>
+                    )}
+                    
+                  
+                  </>
                 ) : null}
 
                 {imagegroup[3] ? (
-                  <div className="Gallery_images4">
-                    <img src={imagegroup[3]} alt=""></img>
-                  </div>
+                  
+                  <>
+                    {index%3===0?(
+                      <div className="Gallery_image4_text">
+                        <h2 className="Gallery_tile3">
+                        "The great room is a story of <br/>
+                        sumptuous warmth within a <br/>
+                        soaring space dripping with <br/>
+                        glass chandeliers."
+                        </h2>
+                      </div>
+                    ):
+                    (
+                      <div className="Gallery_images4">
+                       <img src={imagegroup[3]} alt=""></img>
+                      </div>
+                    )}
+                    </>
+                 
                 ) : null}
               </div>
             </div>
             <div></div>
-            {imagegroup[4] ? (
+            {imagegroup[3] ? (
               <div className="Gallery_Containers">
                 <div className="Gallery_image5">
-                  <img src={imagegroup[4]} alt=""></img>
+                  <img src={imagegroup[3]} alt=""></img>
                 </div>
               </div>
             ) : null}
