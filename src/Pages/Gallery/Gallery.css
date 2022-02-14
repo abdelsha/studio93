@@ -176,7 +176,7 @@
     grid-area: ThirdImage;
     display: flex;
     min-width: max-content;
-    max-height: 50vh;
+    max-height: 100%;
     
   }
   .Gallery_images3 img{
@@ -191,7 +191,7 @@
     grid-area: FourthImage;
     display: flex;
     min-width:max-content;
-    max-height: 50vh;
+    max-height: 100%;
     
   }
   .Gallery_images4 img{
