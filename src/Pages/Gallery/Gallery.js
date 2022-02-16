@@ -120,7 +120,7 @@ function Gallery() {
 
                 {imagegroup[2] ? (
                   <>
-                    {index % 3 === 2 && index === 2 ? (
+                    {index % 3 === 2  ? (
                       <div className={`Gallery_image${`${index}${2}`}_text`}>
                       <h2 className={`Gallery_tile${`${index}${2}`}`}>
                           “The dining room <br />
