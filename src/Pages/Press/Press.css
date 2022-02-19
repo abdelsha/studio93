@@ -1,0 +1,27 @@
+.Press_pdf{
+    display: flex;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    margin: 0 auto;
+    
+}
+.Press_pages{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+ .react-pdf__Page {
+    max-width: calc(100% - 2em);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin: 1em;
+  }
+  
+ .react-pdf__Page canvas {
+    max-width: 100%;
+    height: auto;
+  }

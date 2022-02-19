@@ -6,7 +6,10 @@ function Navigation(props) {
     <div className="Navigation_Main">
       <div className="Navigation_NavigationBar">
         <div className="Navigation_logo">
+          <Link to="/">
           <img className="ImgLeft" src="/images/LogoLeft.png" alt="" />
+          </Link>
+          
         </div>
         <div className="Navigation_Routing">
           <div className="Navigation_Routing_block">
@@ -16,7 +19,7 @@ function Navigation(props) {
             <Link className="Navigation_links" to="/richmond-road">
               GALLERY
             </Link>
-            <Link className="Navigation_links" to="">
+            <Link className="Navigation_links" to="/press">
               PRESS
             </Link>
             <Link className="Navigation_links" to="/about">
@@ -29,15 +32,30 @@ function Navigation(props) {
         </div>
         <div className="Navigation_Social">
           <div className="Navigation_Social_block">
-          <img className="Logos" src="/images/Linkedin.png" alt="" />
-          <img className="Logos" src="/images/Facebook.png" alt="" />
-          <img className="Logos" src="/images/Pintrest.png" alt="" />
-          <img className="Logos" src="/images/Instagram.png" alt="" />
+            <a href="https://www.w3schools.com">
+            <img className="Logos" src="/images/Linkedin.png" alt="" />
+            </a>  
+            <a href="https://www.facebook.com/Studio-93-Inc-105771274927377">
+            <img className="Logos" src="/images/Facebook.png" alt="" />
+            </a> 
+            <a href="https://www.pinterest.ca/Studio93inc/_created/">
+            <img className="Logos" src="/images/Pintrest.png" alt="" />
+            </a> 
+            <a href="https://www.instagram.com/studio93inc/">
+            <img className="Logos" src="/images/Instagram.png" alt="" />
+            </a> 
+          
+          
+          
+          
           </div>
           
         </div>
         <div className="Navigation_logo_right">
-          <img className="ImgRight" src="/images/LogoRight.png" alt="" />
+          <Link to="/">
+            <img className="ImgRight" src="/images/LogoRight.png" alt="" />
+          </Link>
+          
         </div>
       </div>
       <div className="Navigation_body">{props.children}</div>

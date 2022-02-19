@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
+import lozad from "lozad";
 
 import "./Gallery.css";
 
@@ -45,12 +46,12 @@ function Gallery() {
     val === "Right"
       ? container.scrollTo({
           top: 0,
-          left: containerScrollPosition + 2000,
+          left: containerScrollPosition + 1000,
           behavior: "smooth",
         })
       : container.scrollTo({
           top: 0,
-          left: containerScrollPosition - 2000,
+          left: containerScrollPosition - 1000,
           behavior: "smooth",
         });
   };
@@ -62,6 +63,13 @@ function Gallery() {
     console.log(imagedata);
     var element = document.scrollingElement || document.documentElement;
     element.addEventListener("wheel", onWheel, { passive: false });
+
+    return () => {
+      element.removeEventListener('wheel', onWheel, { passive: false })
+    }
+
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
   }, []);
 
   return (
@@ -130,7 +138,12 @@ function Gallery() {
                       </div>
                     ) : (
                       <div className={`Gallery_image${`${index}${1}`}`}>
-                        <img src={imagegroup[1]} alt=""></img>
+                        {`${index}${1}`==="31"? (
+                          <img src="/images/Richmond15.jpg" alt=""></img>
+                        ):(
+                          <img src={imagegroup[1]} alt=""></img>
+                        )}
+                        
                       </div>
                     )}
                   </>
@@ -217,23 +230,43 @@ function Gallery() {
             {imagegroup[3] ? (
               <div className="Gallery_Containers">
                 {`${index}${4}` === "14" ? (
-                 <iframe
-                 style={{ "z_index":-1}}
-                 width="420" height="345" 
-                 src="https://www.youtube.com/embed/F09W9JoKALs?&autoplay=1&controls=0&&showinfo=0&loop=1&mute=1">
+                 <video 
+                 className={`lozad Gallery_video${`${index}${4}`}`}
+                 autoPlay
+                 loop
+                 muted
+                 >
+                   <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
+                   
+                 </video>
                  
-                 ></iframe>
                 ) : (
                   <>
                     {`${index}${4}` === "44" ? (
-                     <video></video>
+                     <video 
+                     className={`lozad Gallery_video${`${index}${4}`}`}
+                     autoPlay
+                     loop
+                     muted
+                     >
+                       <source src="/images/RichmondFamilyRoom.mp4" type="video/mp4"></source>
+                       
+                     </video>
                     ) : (
                       <>
                         {`${index}${4}` === "64" ? (
-                          <video></video>
+                          <video 
+                          className={`lozad Gallery_video${`${index}${4}`}`}
+                          autoPlay
+                          loop
+                          muted
+                          >
+                            <source src="/images/RichmondMasterSuite.mp4" type="video/mp4"></source>
+                            
+                          </video>
                         ) : (
                           <>
-                            {`${index}${4}` === "24" ? null : (
+                            {`${index}${4}` === "24" || `${index}${4}` === "34" ? null : (
                               <div className={`Gallery_image${`${index}${4}`}`}>
                                 <img src={imagegroup[3]} alt=""></img>
                                 {/* {14,44,64}*/}
