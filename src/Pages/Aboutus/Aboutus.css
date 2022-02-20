@@ -2,7 +2,7 @@
     display: grid;
     height: calc(100vh - 70px);
     /* max-width: 100vw; */
-    min-width:100%;
+    /* min-width:100%; */
     /* grid-template-columns: repeat(4,1fr); */
     grid-template-columns:55vw 45vw;
     grid-template-rows: 100%;
@@ -49,7 +49,7 @@
     grid-column: 2;
     grid-row: 1;
     display: flex;
-    min-width: max-content;
+    /* min-width: max-content; */
 }
 .About_image2 img{
     width: 100%;
