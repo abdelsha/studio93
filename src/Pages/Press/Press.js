@@ -19,7 +19,7 @@ function Press() {
   return (
     <div className='Press_pdf'>
       <Document file="./studio93.pdf" onLoadSuccess={onDocumentLoadSuccess} className="Press_pages">
-        <Page pageNumber={1} />
+        <Page pageNumber={1} id="Press_pages"/>
         <Page pageNumber={2} />
       </Document>
       

@@ -6,13 +6,15 @@
     
     margin: 0 auto;
     
+    
+    
 }
 .Press_pages{
     display: flex;
     flex-direction: column;
     max-width: 100%;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
     
 }
  .react-pdf__Page {
@@ -22,6 +24,10 @@
   }
   
  .react-pdf__Page canvas {
-    max-width: 100%;
-    height: auto;
+    max-width: min-content;
+    height: 100%;
   }
+.react-pdf_Page{
+   
+}
+  

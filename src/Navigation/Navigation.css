@@ -2,7 +2,7 @@
 
 .Navigation_Main{
 height: 100vh;
-overflow: hidden;
+overflow: none;
 display: flex;
 flex-direction: column;
 font-family: "Cairo","Poppins", sans-serif;
@@ -90,4 +90,132 @@ margin-bottom: 20px;
     /* width: 59px; */
     max-width: 59px;
     height: 50px;
+}
+
+
+
+
+@media (max-width: 1200px){
+    .Navigation_Main{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        font-family: "Cairo","Poppins", sans-serif;
+            background: linear-gradient(135deg,#0F152D 100%,rgb(40,116,252) 50%);
+            color: #fcb900;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 10px;
+            letter-spacing: -0.45px;
+        
+        }
+        
+        .Navigation_NavigationBar{
+        height: 60px;
+        display: flex;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        position: relative;
+        justify-content: space-between;
+        }
+        .css-e53awj-MuiStack-root{
+            align-items: center;
+        }
+        .Navigation_links{
+            color: #C49A6C;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            flex-wrap: wrap;
+            padding: 0px 0px;
+            
+        }
+
+        #Navigation_dropdown{
+            display: flex;
+            background-color: #0F152D;
+            color: #C49A6C;
+            width: 100vw;
+            justify-content: center;
+            z-index: 34;
+            
+   
+        }
+        #Navigation_dropdown_links{
+            font-size: 14px;
+            padding-top: 0;
+            justify-content: center;
+            
+        }
+        #Navigation_menudrop{
+            display: flex;
+            height: 30px;
+        }
+        .Navigation_body{
+        height:calc(100vh - 80px);
+        display: flex;
+        margin-bottom: 20px;
+
+        
+        }
+        .Navigation_logo{
+            display: flex;
+            width: 35.95%;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .Navigation_logo .ImgLeft{
+            max-width: 118px;
+            height: 50px;
+        }
+        .Navigation_Routing{
+            display: flex;
+            width: 44.987%;
+            justify-content: flex-end;
+        }
+        .Navigation_Routing_block{
+            display: flex;
+            
+        
+        }
+       
+        .Navigation_Social{
+            display: flex;
+            width: auto;
+            justify-content: center;
+            margin: 0 5px;
+            align-items: center;
+        }
+        .Navigation_Social_block{
+            display: flex;
+            align-items: flex-end;
+            
+        }
+        .Navigation_Social .Logos{
+            width: 1.6em;
+            height: 1.6em;
+            position: relative;
+            display: block;
+            margin: 0px 1px;
+        }
+        .Navigation_logo_right{
+            display: flex;
+            width: auto;
+        }
+        .Navigation_logo_right .ImgRight{
+            /* width: 59px; */
+            max-width: 59px;
+            height: 50px;
+        }
+
 }
