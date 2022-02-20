@@ -433,11 +433,11 @@ function Gallery() {
                               <img src={imagegroup[3]} alt=""></img>
                             ) : (
                               <h2 className={`Gallery_tile${`${index}${3}`}`}>
-                                “The heart of the <br />
-                                matter is a stunning <br />
+                                “The heart of the 
+                                matter is a stunning
                                 kitching, in carrara,
-                                <br />
-                                massacar, and white <br />
+                                
+                                massacar, and white 
                                 lacquer.”
                               </h2>
                             )}
@@ -461,6 +461,7 @@ function Gallery() {
                  autoPlay
                  loop
                  muted
+                 playsInline
                  >
                    <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
                    
@@ -474,6 +475,7 @@ function Gallery() {
                      autoPlay
                      loop
                      muted
+                     playsInline
                      >
                        <source src="/images/RichmondFamilyRoom.mp4" type="video/mp4"></source>
                        
@@ -486,6 +488,7 @@ function Gallery() {
                           autoPlay
                           loop
                           muted
+                          playsInline
                           >
                             <source src="/images/RichmondMasterSuite.mp4" type="video/mp4"></source>
                             
