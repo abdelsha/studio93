@@ -31,7 +31,7 @@ function Home() {
     <img src='/images/Home1.jpg' alt=''/>
     </Link>
     <Link  to="/richmond-road"className='Home_Click_Button'>
-      <h2>Learn More</h2>
+      <h2>Explore More</h2>
     </Link>
     </div>
     </>
@@ -44,7 +44,7 @@ function Home() {
     </Link>
    
     <Link  to="/richmond-road"className='Home_Click_Button'>
-      <h2>Learn More</h2>
+      <h2>Explore More</h2>
     </Link>
     </div>
     </>

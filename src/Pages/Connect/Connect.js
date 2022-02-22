@@ -87,7 +87,7 @@ let [screenWidth, setScreenWidth] = useState(1024);
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Subject"
+                  
                   name="subject"
                 />
               </div>
@@ -176,7 +176,7 @@ let [screenWidth, setScreenWidth] = useState(1024);
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Subject"
+                  
                   name="subject"
                 />
               </div>
