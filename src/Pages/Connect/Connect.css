@@ -154,7 +154,7 @@
     grid-column: 2;
     grid-row: 1;
     display: flex;
-    min-width: max-content;
+    /* min-width: max-content; */
 }
 .Connect_image2 img{
     width: 100%;

@@ -51,7 +51,7 @@ function Gallery() {
     }
   };
   const onWheel2 = (e, val) => {
-    //console.log("clicked")
+    console.log("clicked")
     e.preventDefault();
     const container = scrollRef.current;
     const containerScrollPosition = scrollRef.current.scrollLeft;
@@ -105,7 +105,7 @@ function Gallery() {
       <div
         className="Gallery_ArrowLeft"
         onClick={(e) => {
-          onWheel2(e, null);
+          onWheel2(e, "left");
         }}
       >
         <img src="/images/Left-Button.png" alt=""></img>
@@ -250,17 +250,17 @@ function Gallery() {
                     )}
                   </>
                 ) : null}
-              </div>
-            </div>
-            <div></div>
-            {imagegroup[3] ? (
-              <div className="Gallery_Containers">
+                
+                
+                {imagegroup[3] ? (
+              <>
                 {`${index}${4}` === "14" ? (
                  <video 
                  className={`lozad Gallery_video${`${index}${4}`}`}
                  autoPlay
                  loop
                  muted
+                 playsInline
                  >
                    <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
                    
@@ -274,6 +274,7 @@ function Gallery() {
                      autoPlay
                      loop
                      muted
+                     playsInline
                      >
                        <source src="/images/RichmondFamilyRoom.mp4" type="video/mp4"></source>
                        
@@ -286,6 +287,7 @@ function Gallery() {
                           autoPlay
                           loop
                           muted
+                          playsInline
                           >
                             <source src="/images/RichmondMasterSuite.mp4" type="video/mp4"></source>
                             
@@ -305,8 +307,12 @@ function Gallery() {
                     )}
                   </>
                 )}
-              </div>
+              </>
             ) : null}
+              </div>
+            </div>
+            <div></div>
+            
           </>
         );
       })}
@@ -338,21 +344,21 @@ function Gallery() {
                           <h2 className={`Gallery_tile${`${index}${1}`}`}>
                             “The approach to scale and detail in the great room
                             expresses
-                            <br /> an almost stately elegance reminiscent of the
+                             an almost stately elegance reminiscent of the
                             grand hotels.”
                           </h2>
                         ) : (
                           <h2 className={`Gallery_tile${`${index}${1}`}`}>
-                            “The home <br />
+                            “The home 
                             exudes luxury at
-                            <br />
-                            every turn, <br />
+                            
+                            every turn,
                             enriching the
-                            <br />
+                            
                             homeowners
-                            <br />
-                            lives beyond the <br />
-                            confines of the <br />
+                            
+                            lives beyond the 
+                            confines of the 
                             space.”
                           </h2>
                         )}
@@ -378,20 +384,20 @@ function Gallery() {
                       <div className={`Gallery_image${`${index}${2}`}_text`}>
                         {`${index}${2}` === "22" ? (
                           <h2 className={`Gallery_tile${`${index}${2}`}`}>
-                            “The dining room <br />
-                            makes a <br />
-                            sophisticated and <br />
-                            tailored statement <br />
+                            “The dining room 
+                            makes a 
+                            sophisticated and 
+                            tailored statement 
                             informed by
-                            <br />
+                           
                             echoes of Art
-                            <br />
+                            
                             Deco.”
                           </h2>
                         ) : (
                           <h2 className={`Gallery_tile${`${index}${2}`}`}>
-                            “The living room is anchored by the warmth of <br />
-                            the matte black nero marquina fireplace <br />
+                            “The living room is anchored by the warmth of
+                            the matte black nero marquina fireplace 
                             with delicate bronze inlay.”
                           </h2>
                         )}
@@ -427,11 +433,11 @@ function Gallery() {
                               <img src={imagegroup[3]} alt=""></img>
                             ) : (
                               <h2 className={`Gallery_tile${`${index}${3}`}`}>
-                                “The heart of the <br />
-                                matter is a stunning <br />
+                                “The heart of the 
+                                matter is a stunning
                                 kitching, in carrara,
-                                <br />
-                                massacar, and white <br />
+                                
+                                massacar, and white 
                                 lacquer.”
                               </h2>
                             )}
@@ -455,6 +461,7 @@ function Gallery() {
                  autoPlay
                  loop
                  muted
+                 playsInline
                  >
                    <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
                    
@@ -468,6 +475,7 @@ function Gallery() {
                      autoPlay
                      loop
                      muted
+                     playsInline
                      >
                        <source src="/images/RichmondFamilyRoom.mp4" type="video/mp4"></source>
                        
@@ -480,6 +488,7 @@ function Gallery() {
                           autoPlay
                           loop
                           muted
+                          playsInline
                           >
                             <source src="/images/RichmondMasterSuite.mp4" type="video/mp4"></source>
                             
