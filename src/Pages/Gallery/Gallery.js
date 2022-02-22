@@ -140,8 +140,7 @@ function Gallery() {
                         {`${index}${1}` === "11" ? (
                           <h2 className={`Gallery_tile${`${index}${1}`}`}>
                             “The approach to scale and detail in the great room
-                            expresses
-                            <br /> an almost stately elegance reminiscent of the
+                            expresses an almost stately elegance reminiscent of the
                             grand hotels.”
                           </h2>
                         ) : (
