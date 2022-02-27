@@ -7,7 +7,7 @@ function Connect() {
   function sendEmail(e) {
     e.preventDefault();
 
-emailjs.sendForm('service_ur4qw2e', 'template_j2mogic', e.target, 'user_J4xOcHm5zUBPpUwaHtH9V')
+emailjs.sendForm('service_hu17s3v', 'template_j2mogic', e.target, 'user_J4xOcHm5zUBPpUwaHtH9V')
     .then((result) => {
         console.log(result.text);
     }, (error) => {
@@ -53,9 +53,9 @@ let [screenWidth, setScreenWidth] = useState(1024);
         </div>
         <div className="Connect_body6">
           <text>
-            3080 Yonge Street, Suite 8080,
+            155 Hoey Crescent
             <br />
-            Toronto, ontario, M4N 3N1, <br />
+            Oakville, ontario, L6M 0X1, <br />
             Canada
           </text>
         </div>
@@ -115,8 +115,8 @@ let [screenWidth, setScreenWidth] = useState(1024);
         </div>
         
       </div>
-      <div className="Connect_image2">
-        <img src="/images/Richmond210.jpg" alt="" />
+      <div className="Connect_image2" onContextMenu={(e)=> e.preventDefault()}>
+        <img src="/images/Richmond10.jpg" alt="" />
       </div>
     </div>
     ):(

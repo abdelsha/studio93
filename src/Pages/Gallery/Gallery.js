@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import lozad from "lozad";
+import ReactPlayer from 'react-player/lazy'
 
 import "./Gallery.css";
 
@@ -126,7 +127,10 @@ function Gallery() {
         return (
           <>
             <div className="Gallery_Container" key={`${index}${index % 3}`}>
-              <div className="Gallery_Grid">
+              <div
+                className="Gallery_Grid"
+                onContextMenu={(e) => e.preventDefault()}
+              >
                 {imagegroup[0] ? (
                   <div className={`Gallery_image${`${index}${0}`}`}>
                     <img src={imagegroup[0]} alt=""></img>
@@ -140,8 +144,8 @@ function Gallery() {
                         {`${index}${1}` === "11" ? (
                           <h2 className={`Gallery_tile${`${index}${1}`}`}>
                             “The approach to scale and detail in the great room
-                            expresses an almost stately elegance reminiscent of the
-                            grand hotels.”
+                            expresses an almost stately elegance reminiscent of
+                            the grand hotels.”
                           </h2>
                         ) : (
                           <h2 className={`Gallery_tile${`${index}${1}`}`}>
@@ -163,12 +167,11 @@ function Gallery() {
                       </div>
                     ) : (
                       <div className={`Gallery_image${`${index}${1}`}`}>
-                        {`${index}${1}`==="31"? (
+                        {`${index}${1}` === "31" ? (
                           <img src="/images/Richmond15.jpg" alt=""></img>
-                        ):(
+                        ) : (
                           <img src={imagegroup[1]} alt=""></img>
                         )}
-                        
                       </div>
                     )}
                   </>
@@ -221,7 +224,7 @@ function Gallery() {
                             "The great room is a story of <br />
                             sumptuous warmth within a <br />
                             soaring space dripping with <br />
-                            glass chandeliers."
+                            crystal chandeliers."
                           </h2>
                         ) : (
                           <>
@@ -249,75 +252,128 @@ function Gallery() {
                     )}
                   </>
                 ) : null}
-                
-                
+
                 {imagegroup[3] ? (
-              <>
-                {`${index}${4}` === "14" ? (
-                 <video 
-                 className={`lozad Gallery_video${`${index}${4}`}`}
-                 autoPlay
-                 loop
-                 muted
-                 playsInline
-                 >
-                   <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
-                   
-                 </video>
-                 
-                ) : (
                   <>
-                    {`${index}${4}` === "44" ? (
-                     <video 
-                     className={`lozad Gallery_video${`${index}${4}`}`}
-                     autoPlay
-                     loop
-                     muted
-                     playsInline
-                     >
-                       <source src="/images/RichmondFamilyRoom.mp4" type="video/mp4"></source>
-                       
-                     </video>
+                    {`${index}${4}` === "14" ? (
+                      //  <video
+                      //  className={`lozad Gallery_video${`${index}${4}`}`}
+                      //  autoPlay
+                      //  loop
+                      //  muted
+                      //  playsInline
+                      //  >
+                      //    <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
+
+                      //  </video>
+
+                      // <ReactPlayer
+                      //   url="https://www.youtube.com/watch?v=F09W9JoKALs"
+                      //   loop={1}
+                      //   playing={true}
+                      //   muted={true}
+                      //   controls={false}
+                      //   playsinline={true}
+
+                      // />
+                      <div className={`lozad Gallery_video${`${index}${4}`}`}>
+                        <div className="video-container">
+                          <ReactPlayer
+                            url="https://www.youtube.com/watch?v=F09W9JoKALs"
+                            loop={1}
+                            playing={true}
+                            muted={true}
+                            controls={false}
+                            playsinline={true}
+                          />
+                        </div>
+                      </div>
                     ) : (
                       <>
-                        {`${index}${4}` === "64" ? (
-                          <video 
-                          className={`lozad Gallery_video${`${index}${4}`}`}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
+                        {`${index}${4}` === "44" ? (
+                          // <video
+                          //   className={`lozad Gallery_video${`${index}${4}`}`}
+                          //   autoPlay
+                          //   loop
+                          //   muted
+                          //   playsInline
+                          // >
+                          //   <source
+                          //     src="/images/RichmondFamilyRoom.mp4"
+                          //     type="video/mp4"
+                          //   ></source>
+                          // </video>
+                          <div
+                            className={`lozad Gallery_video${`${index}${4}`}`}
                           >
-                            <source src="/images/RichmondMasterSuite.mp4" type="video/mp4"></source>
-                            
-                          </video>
+                            <div className="video-container">
+                              <ReactPlayer
+                                url="https://www.youtube.com/watch?v=BLPENZ6NX7E"
+                                loop={1}
+                                playing={true}
+                                muted={true}
+                                controls={false}
+                                playsinline={true}
+                              />
+                            </div>
+                          </div>
                         ) : (
                           <>
-                            { `${index}${4}` === "34" ? null : (
-                              <div className={`Gallery_image${`${index}${4}`}`}>
-                                <img src={imagegroup[3]} alt=""></img>
-                                {/* {14,44,64}*/}
-                              </div>
+                            {`${index}${4}` === "64" ? (
+                              // <video
+                              //   className={`lozad Gallery_video${`${index}${4}`}`}
+                              //   autoPlay
+                              //   loop
+                              //   muted
+                              //   playsInline
+                              // >
+                              //   <source
+                              //     src="/images/RichmondMasterSuite.mp4"
+                              //     type="video/mp4"
+                              //   ></source>
+                              // </video>
+                              <div
+                            className={`lozad Gallery_video${`${index}${4}`}`}
+                          >
+                            <div className="video-container">
+                              <ReactPlayer
+                                url="https://www.youtube.com/watch?v=XvC0UA4ekcY"
+                                loop={1}
+                                playing={true}
+                                muted={true}
+                                controls={false}
+                                playsinline={true}
+                              />
+                            </div>
+                          </div>
+                            ) : (
+                              <>
+                                {`${index}${4}` === "34" ? null : (
+                                  <div
+                                    className={`Gallery_image${`${index}${4}`}`}
+                                  >
+                                    <img src={imagegroup[3]} alt=""></img>
+                                    {/* {14,44,64}*/}
+                                  </div>
+                                )}
+                                {/**/}
+                              </>
                             )}
-                            {/**/}
                           </>
                         )}
                       </>
                     )}
                   </>
-                )}
-              </>
-            ) : null}
+                ) : null}
               </div>
             </div>
             <div></div>
-            
           </>
         );
       })}
     </div>
     ):(
-      <div className="Gallary_main" >
+      <div className="Gallary_main" onContextMenu={(e)=> e.preventDefault()} >
       {/* {console.log(imagedata)} */}
       {/* {console.log(window.pageXOffset)} */}
 
@@ -424,7 +480,7 @@ function Gallery() {
                             "The great room is a story of 
                             sumptuous warmth within a 
                             soaring space dripping with 
-                            glass chandeliers."
+                            crystal chandeliers."
                           </h2>
                         ) : (
                           <>
@@ -455,43 +511,85 @@ function Gallery() {
             {imagegroup[3] ? (
               <>
               {`${index}${4}` === "14" ? (
-                 <video 
-                 className={`lozad Gallery_video${`${index}${4}`}`}
-                 autoPlay
-                 loop
-                 muted
-                 playsInline
-                 >
-                   <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
+                //  <video 
+                //  className={`lozad Gallery_video${`${index}${4}`}`}
+                //  autoPlay
+                //  loop
+                //  muted
+                //  playsInline
+                //  >
+                //    <source src="/images/RichmondGreatSpace.mp4" type="video/mp4"></source>
                    
-                 </video>
+                //  </video>
+                <div
+                            className={`lozad Gallery_video${`${index}${4}`}`}
+                          >
+                            <div className="video-container">
+                              <ReactPlayer
+                                url="https://www.youtube.com/watch?v=F09W9JoKALs"
+                                loop={1}
+                                playing={true}
+                                muted={true}
+                                controls={false}
+                                playsinline={true}
+                              />
+                            </div>
+                          </div>
                  
                 ) : (
                   <>
                     {`${index}${4}` === "44" ? (
-                     <video 
-                     className={`lozad Gallery_video${`${index}${4}`}`}
-                     autoPlay
-                     loop
-                     muted
-                     playsInline
-                     >
-                       <source src="/images/RichmondFamilyRoom.mp4" type="video/mp4"></source>
+                    //  <video 
+                    //  className={`lozad Gallery_video${`${index}${4}`}`}
+                    //  autoPlay
+                    //  loop
+                    //  muted
+                    //  playsInline
+                    //  >
+                    //    <source src="/images/RichmondFamilyRoom.mp4" type="video/mp4"></source>
                        
-                     </video>
+                    //  </video>
+                    <div
+                            className={`lozad Gallery_video${`${index}${4}`}`}
+                          >
+                            <div className="video-container">
+                              <ReactPlayer
+                                url="https://www.youtube.com/watch?v=BLPENZ6NX7E"
+                                loop={1}
+                                playing={true}
+                                muted={true}
+                                controls={false}
+                                playsinline={true}
+                              />
+                            </div>
+                          </div>
                     ) : (
                       <>
                         {`${index}${4}` === "64" ? (
-                          <video 
-                          className={`lozad Gallery_video${`${index}${4}`}`}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          >
-                            <source src="/images/RichmondMasterSuite.mp4" type="video/mp4"></source>
+                          // <video 
+                          // className={`lozad Gallery_video${`${index}${4}`}`}
+                          // autoPlay
+                          // loop
+                          // muted
+                          // playsInline
+                          // >
+                          //   <source src="/images/RichmondMasterSuite.mp4" type="video/mp4"></source>
                             
-                          </video>
+                          // </video>
+                          <div
+                            className={`lozad Gallery_video${`${index}${4}`}`}
+                          >
+                            <div className="video-container">
+                              <ReactPlayer
+                                url="https://www.youtube.com/watch?v=XvC0UA4ekcY"
+                                loop={1}
+                                playing={true}
+                                muted={true}
+                                controls={false}
+                                playsinline={true}
+                              />
+                            </div>
+                          </div>
                         ) : (
                           <>
                             {`${index}${4}` === "24" || `${index}${4}` === "34" ? null : (
