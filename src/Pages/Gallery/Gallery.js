@@ -267,15 +267,7 @@ function Gallery() {
 
                       //  </video>
 
-                      // <ReactPlayer
-                      //   url="https://www.youtube.com/watch?v=F09W9JoKALs"
-                      //   loop={1}
-                      //   playing={true}
-                      //   muted={true}
-                      //   controls={false}
-                      //   playsinline={true}
-
-                      // />
+                      
                       <div className={`lozad Gallery_video${`${index}${4}`}`}>
                         <div className="video-container">
                           <ReactPlayer
@@ -285,7 +277,17 @@ function Gallery() {
                             muted={true}
                             controls={false}
                             playsinline={true}
+                            height="95vh"
+                            width="calc(16/9 * 95vh)"
+                            config={{
+                              youtube: {
+                                playerVars: { playlist: "F09W9JoKALs",vq:"hd1080" }
+                              },
+                            }}
                           />
+                          {/* <iframe src="https://www.youtube.com/embed/F09W9JoKALs?vq=hd1080&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playsinline=1&amp;modestbranding=1&amp;mute=1&amp;playlist=F09W9JoKALs" 
+                          
+                          frameborder="0" allowfullscreen allow="autoplay"></iframe> */}
                         </div>
                       </div>
                     ) : (
@@ -314,8 +316,18 @@ function Gallery() {
                                 muted={true}
                                 controls={false}
                                 playsinline={true}
+                                height="95vh"
+                                width="calc(16/9 * 95vh)"
+                                config={{
+                                  youtube: {
+                                    playerVars: { playlist: "BLPENZ6NX7E",vq:"hd1080" }
+                                  },
+                                }}
                               />
-                            </div>
+                              {/* <iframe src="https://www.youtube.com/embed/BLPENZ6NX7E?vq=hd1080&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playsinline=1&amp;modestbranding=1&amp;mute=1&amp;playlist=BLPENZ6NX7E" 
+                           
+                              frameborder="0" allowfullscreen allow="autoplay"></iframe> */}
+                           </div>
                           </div>
                         ) : (
                           <>
@@ -343,7 +355,17 @@ function Gallery() {
                                 muted={true}
                                 controls={false}
                                 playsinline={true}
+                                height="95vh"
+                                width="calc(16/9 * 95vh)"
+                                config={{
+                                  youtube: {
+                                    playerVars: { playlist: "XvC0UA4ekcY",vq:"hd1080" }
+                                  },
+                                }}
                               />
+                              {/* <iframe src="https://www.youtube.com/embed/XvC0UA4ekcY?vq=hd1080&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playsinline=1&amp;modestbranding=1&amp;mute=1&amp;playlist=XvC0UA4ekcY" 
+                           
+                           frameborder="0" allowfullscreen allow="autoplay"></iframe> */}
                             </div>
                           </div>
                             ) : (
@@ -532,6 +554,13 @@ function Gallery() {
                                 muted={true}
                                 controls={false}
                                 playsinline={true}
+                                height="calc(9/16 * 100vw)"
+                                width="100vw"
+                                config={{
+                                  youtube: {
+                                    playerVars: { playlist: "F09W9JoKALs" }
+                                  },
+                                }}
                               />
                             </div>
                           </div>
@@ -560,6 +589,13 @@ function Gallery() {
                                 muted={true}
                                 controls={false}
                                 playsinline={true}
+                                height="calc(9/16 * 100vw)"
+                                width="100vw"
+                                config={{
+                                  youtube: {
+                                    playerVars: { playlist: "BLPENZ6NX7E" }
+                                  },
+                                }}
                               />
                             </div>
                           </div>
@@ -587,6 +623,13 @@ function Gallery() {
                                 muted={true}
                                 controls={false}
                                 playsinline={true}
+                                height="calc(9/16 * 100vw)"
+                                width="100vw"
+                                config={{
+                                  youtube: {
+                                    playerVars: { playlist: "XvC0UA4ekcY" }
+                                  },
+                                }}
                               />
                             </div>
                           </div>
