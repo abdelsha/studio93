@@ -638,6 +638,7 @@ width: 0%;
       overflow-y: auto;
       overflow-x: hidden;
       text-transform: none;
+      
     }
     
   
@@ -660,6 +661,7 @@ width: 0%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
     }
   
     .Gallery_image01, .Gallery_image11,.Gallery_image31
@@ -678,6 +680,7 @@ width: 0%;
       width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
     }
   
     .Gallery_image02, .Gallery_image12, .Gallery_image22,.Gallery_image32
@@ -696,6 +699,7 @@ width: 0%;
       width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
     }
   
     .Gallery_image03, .Gallery_image13
@@ -715,6 +719,7 @@ width: 0%;
       width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
     }
   
     .Gallery_image03_text,.Gallery_image13_text, .Gallery_image23_text,
@@ -823,6 +828,7 @@ width: 0%;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      pointer-events: none;
     }
   
 
@@ -841,6 +847,7 @@ width: 0%;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      pointer-events: none;
     }
     .Gallery_image21{
       
@@ -854,6 +861,7 @@ width: 0%;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      pointer-events: none;
     }
     .Gallery_image22_text{
      
@@ -893,6 +901,7 @@ width: 0%;
       width: 100%;
       /* height: 100%; */
       object-fit: cover;
+      pointer-events: none;
     }
     .Gallery_image32{
       
@@ -906,6 +915,7 @@ width: 0%;
       width: 100%;
       /* height: 100%; */
       object-fit: cover;
+      pointer-events: none;
     }
     .Gallery_image33_text{
       
@@ -948,6 +958,7 @@ width: 0%;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      pointer-events: none;
     }
     .Gallery_image41_text{
       width: 0%;
@@ -982,6 +993,7 @@ width: 0%;
   .Gallery_image53 img{
     max-width: 0;
     height: 0%;
+    pointer-events: none;
   }
   /* Correction */
   .Gallery_image60{
@@ -991,6 +1003,7 @@ width: 0%;
     max-width: 0;
     width: 0%;
     height: 0vh;
+    pointer-events: none;
   }
   .Gallery_image61{
     grid-column: 1;
@@ -1026,6 +1039,7 @@ width: 0%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
   }
   /* Correction */
   .Gallery_image73{
@@ -1035,6 +1049,7 @@ width: 0%;
   .Gallery_image73 img{
     width: 0%;
     height: 0%;
+    pointer-events: none;
   }
   
   .Gallery_image72{
@@ -1050,6 +1065,7 @@ width: 0%;
   .Gallery_image72 img{
     width: 100%;
     height: 100%;
+    pointer-events: none;
     object-fit: cover;
   }
   .Gallery_image71_text{

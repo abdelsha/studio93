@@ -141,10 +141,10 @@ let [screenWidth, setScreenWidth] = useState(1024);
           <text>info@studio93inc.com</text>
         </div>
         <div className="Connect_body6">
-          <text>
-            3080 Yonge Street, Suite 8080,
+        <text>
+            155 Hoey Crescent
             <br />
-            Toronto, ontario, M4N 3N1, <br />
+            Oakville, ontario, L6M 0X1, <br />
             Canada
           </text>
         </div>

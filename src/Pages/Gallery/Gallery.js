@@ -279,9 +279,11 @@ function Gallery() {
                             playsinline={true}
                             height="95vh"
                             width="calc(16/9 * 95vh)"
+                            
+                            
                             config={{
                               youtube: {
-                                playerVars: { playlist: "F09W9JoKALs",vq:"hd1080" }
+                                playerVars: { playlist: "F09W9JoKALs",vq:"hd1080",autoplay:1,mute:1 }
                               },
                             }}
                           />
@@ -318,9 +320,11 @@ function Gallery() {
                                 playsinline={true}
                                 height="95vh"
                                 width="calc(16/9 * 95vh)"
+                                
+                                
                                 config={{
                                   youtube: {
-                                    playerVars: { playlist: "BLPENZ6NX7E",vq:"hd1080" }
+                                    playerVars: { playlist: "BLPENZ6NX7E",vq:"hd1080",autoplay:1,mute:1 }
                                   },
                                 }}
                               />
@@ -357,9 +361,11 @@ function Gallery() {
                                 playsinline={true}
                                 height="95vh"
                                 width="calc(16/9 * 95vh)"
+                                
+                                 
                                 config={{
                                   youtube: {
-                                    playerVars: { playlist: "XvC0UA4ekcY",vq:"hd1080" }
+                                    playerVars: { playlist: "XvC0UA4ekcY",vq:"hd1080",autoplay:1,mute:1 }
                                   },
                                 }}
                               />
@@ -556,6 +562,8 @@ function Gallery() {
                                 playsinline={true}
                                 height="calc(9/16 * 100vw)"
                                 width="100vw"
+                                
+                                
                                 config={{
                                   youtube: {
                                     playerVars: { playlist: "F09W9JoKALs" }
@@ -591,6 +599,7 @@ function Gallery() {
                                 playsinline={true}
                                 height="calc(9/16 * 100vw)"
                                 width="100vw"
+                                
                                 config={{
                                   youtube: {
                                     playerVars: { playlist: "BLPENZ6NX7E" }
@@ -625,6 +634,7 @@ function Gallery() {
                                 playsinline={true}
                                 height="calc(9/16 * 100vw)"
                                 width="100vw"
+                                
                                 config={{
                                   youtube: {
                                     playerVars: { playlist: "XvC0UA4ekcY" }
