@@ -279,7 +279,7 @@ function Gallery() {
                             playsinline={true}
                             height="95vh"
                             width="calc(16/9 * 95vh)"
-                            
+                            onPause={(e)=>{window.location.reload(false)}}
                             
                             config={{
                               youtube: {
@@ -320,7 +320,7 @@ function Gallery() {
                                 playsinline={true}
                                 height="95vh"
                                 width="calc(16/9 * 95vh)"
-                                
+                                onPause={(e)=>{window.location.reload(false)}}
                                 
                                 config={{
                                   youtube: {
@@ -362,7 +362,7 @@ function Gallery() {
                                 height="95vh"
                                 width="calc(16/9 * 95vh)"
                                 
-                                 
+                                onPause={(e)=>{window.location.reload(false)}} 
                                 config={{
                                   youtube: {
                                     playerVars: { playlist: "XvC0UA4ekcY",vq:"hd1080",autoplay:1,mute:1 }
@@ -563,7 +563,7 @@ function Gallery() {
                                 height="calc(9/16 * 100vw)"
                                 width="100vw"
                                 
-                                
+                                onPause={(e)=>{window.location.reload(false)}}
                                 config={{
                                   youtube: {
                                     playerVars: { playlist: "F09W9JoKALs" }
@@ -599,7 +599,7 @@ function Gallery() {
                                 playsinline={true}
                                 height="calc(9/16 * 100vw)"
                                 width="100vw"
-                                
+                                onPause={(e)=>{window.location.reload(false)}}
                                 config={{
                                   youtube: {
                                     playerVars: { playlist: "BLPENZ6NX7E" }
@@ -634,7 +634,7 @@ function Gallery() {
                                 playsinline={true}
                                 height="calc(9/16 * 100vw)"
                                 width="100vw"
-                                
+                                onPause={(e)=>{window.location.reload(false)}}
                                 config={{
                                   youtube: {
                                     playerVars: { playlist: "XvC0UA4ekcY" }
