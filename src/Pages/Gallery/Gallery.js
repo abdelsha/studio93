@@ -283,7 +283,7 @@ function Gallery() {
                             
                             config={{
                               youtube: {
-                                playerVars: { playlist: "F09W9JoKALs",vq:"hd1080",autoplay:1,mute:1 }
+                                playerVars: { playlist: "F09W9JoKALs",vq:"hd1080",autoplay:1,mute:1,playsinline:1 }
                               },
                             }}
                           />
@@ -324,7 +324,7 @@ function Gallery() {
                                 
                                 config={{
                                   youtube: {
-                                    playerVars: { playlist: "BLPENZ6NX7E",vq:"hd1080",autoplay:1,mute:1 }
+                                    playerVars: { playlist: "BLPENZ6NX7E",vq:"hd1080",autoplay:1,mute:1,playsinline:1 }
                                   },
                                 }}
                               />
@@ -365,7 +365,7 @@ function Gallery() {
                                 onPause={(e)=>{window.location.reload(false)}} 
                                 config={{
                                   youtube: {
-                                    playerVars: { playlist: "XvC0UA4ekcY",vq:"hd1080",autoplay:1,mute:1 }
+                                    playerVars: { playlist: "XvC0UA4ekcY",vq:"hd1080",autoplay:1,mute:1,playsinline:1 }
                                   },
                                 }}
                               />
@@ -566,7 +566,7 @@ function Gallery() {
                                 onPause={(e)=>{window.location.reload(false)}}
                                 config={{
                                   youtube: {
-                                    playerVars: { playlist: "F09W9JoKALs" }
+                                    playerVars: { playlist: "F09W9JoKALs",autoplay:1,mute:1,playsinline:1  }
                                   },
                                 }}
                               />
@@ -602,7 +602,7 @@ function Gallery() {
                                 onPause={(e)=>{window.location.reload(false)}}
                                 config={{
                                   youtube: {
-                                    playerVars: { playlist: "BLPENZ6NX7E" }
+                                    playerVars: { playlist: "BLPENZ6NX7E",autoplay:1,mute:1,playsinline:1  }
                                   },
                                 }}
                               />
@@ -637,7 +637,7 @@ function Gallery() {
                                 onPause={(e)=>{window.location.reload(false)}}
                                 config={{
                                   youtube: {
-                                    playerVars: { playlist: "XvC0UA4ekcY" }
+                                    playerVars: { playlist: "XvC0UA4ekcY",autoplay:1,mute:1,playsinline:1  }
                                   },
                                 }}
                               />
