@@ -20,18 +20,18 @@ function Home() {
     {screenWidth>1200?(
       <>
       <div className='Home_main'>
-      <Link to="/richmond-road" className='Home_image1'>
+      <Link to="/richmond-road" className='Home_image1' onContextMenu={(e)=> e.preventDefault()}>
       <img src='/images/Home3.jpg' alt=''/>
     </Link>
     
-    <Link to="/richmond-road" className='Home_image2'>
+    <Link to="/richmond-road" className='Home_image2' onContextMenu={(e)=> e.preventDefault()}>
     <img src='/images/Richmond4.jpg' alt=''/>
     </Link>
-    <Link  to="/richmond-road"className='Home_image3'>
+    <Link  to="/richmond-road"className='Home_image3' onContextMenu={(e)=> e.preventDefault()}>
     <img src='/images/Home1.jpg' alt=''/>
     </Link>
     <Link  to="/richmond-road"className='Home_Click_Button'>
-      <h2>Learn More</h2>
+      <h2>Explore More</h2>
     </Link>
     </div>
     </>
@@ -39,12 +39,12 @@ function Home() {
       <>
       
       <div className='Home_main'>
-    <Link to="/richmond-road" className='Home_image2'>
+    <Link to="/richmond-road" className='Home_image2' onContextMenu={(e)=> e.preventDefault()}>
     <img src='/images/Richmond4.jpg' alt=''/>
     </Link>
    
-    <Link  to="/richmond-road"className='Home_Click_Button'>
-      <h2>Learn More</h2>
+    <Link  to="/richmond-road"className='Home_Click_Button' onContextMenu={(e)=> e.preventDefault()}>
+      <h2>Explore More</h2>
     </Link>
     </div>
     </>

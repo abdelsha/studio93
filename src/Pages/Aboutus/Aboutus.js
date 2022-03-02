@@ -56,7 +56,7 @@ function Aboutus() {
         </text>
       </div>
     </div>
-    <div className='About_image2'>
+    <div className='About_image2' onContextMenu={(e)=> e.preventDefault()}>
 
     <img src='/images/Richmond4.jpg' alt=''/>
     </div>

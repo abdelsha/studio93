@@ -84,7 +84,7 @@ function Navigation(props) {
             </div>
             <div className="Navigation_Social">
               <div className="Navigation_Social_block">
-                <a href="https://www.w3schools.com">
+                <a href="https://www.linkedin.com/company/studio93inc/about/">
                   <img className="Logos" src="/images/Linkedin.png" alt="" />
                 </a>
                 <a href="https://www.facebook.com/Studio-93-Inc-105771274927377">
@@ -208,7 +208,7 @@ function Navigation(props) {
             </Stack>
             <div className="Navigation_Social">
               <div className="Navigation_Social_block">
-                <a href="https://www.w3schools.com">
+                <a href="https://www.linkedin.com/company/studio93inc/about/">
                   <img className="Logos" src="/images/Linkedin.png" alt="" />
                 </a>
                 <a href="https://www.facebook.com/Studio-93-Inc-105771274927377">
