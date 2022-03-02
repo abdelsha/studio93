@@ -7,7 +7,7 @@ function Connect() {
   function sendEmail(e) {
     e.preventDefault();
 
-emailjs.sendForm('service_hu17s3v', 'template_j2mogic', e.target, 'user_J4xOcHm5zUBPpUwaHtH9V')
+emailjs.sendForm('service_jr2abbl', 'template_qs4m6fy', e.target, 'fsWMUNLa__NFfRhKO')
     .then((result) => {
         console.log(result.text);
     }, (error) => {
