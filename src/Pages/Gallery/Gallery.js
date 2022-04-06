@@ -232,9 +232,9 @@ function Gallery() {
                               <img src={imagegroup[3]} alt=""></img>
                             ) : (
                               <h2 className={`Gallery_tile${`${index}${3}`}`}>
-                                “The heart of the <br />
-                                matter is a stunning <br />
-                                kitching, in carrara,
+                                “The kitchen is the heart <br />
+                                of the home. The matter is a  <br />
+                                stunning kitching, in carrara,
                                 <br />
                                 massacar, and white <br />
                                 lacquer.”
@@ -516,8 +516,8 @@ function Gallery() {
                               <img src={imagegroup[3]} alt=""></img>
                             ) : (
                               <h2 className={`Gallery_tile${`${index}${3}`}`}>
-                                “The heart of the 
-                                matter is a stunning
+                                “The kitchen is the heart of the 
+                                home. The matter is a stunning
                                 kitching, in carrara,
                                 
                                 massacar, and white 

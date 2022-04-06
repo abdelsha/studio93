@@ -53,9 +53,9 @@ let [screenWidth, setScreenWidth] = useState(1024);
         </div>
         <div className="Connect_body6">
           <text>
-            155 Hoey Crescent
+            3080 Yonge St Suite 6060
             <br />
-            Oakville, ontario, L6M 0X1, <br />
+            Toronto, Ontario, M4N 3N2, <br />
             Canada
           </text>
         </div>
@@ -142,9 +142,9 @@ let [screenWidth, setScreenWidth] = useState(1024);
         </div>
         <div className="Connect_body6">
         <text>
-            155 Hoey Crescent
+            3080 Yonge St Suite 6060
             <br />
-            Oakville, ontario, L6M 0X1, <br />
+            Toronto, Ontario, M4N 3N2, <br />
             Canada
           </text>
         </div>
